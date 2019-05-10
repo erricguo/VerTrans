@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDB2847D-DE2D-4DFC-8C01-9A533512558C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VerTrans</RootNamespace>
+    <AssemblyName>VerTrans</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>V.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>7E6FFD026BDE9DE393AF00C5E0C254F6663F3CFF</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetZone>Internet</TargetZone>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>VerTrans_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <PublishUrl>ftp://kupoautos.com/public_html/VerTrans/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <InstallUrl>http://kupoautos.com/VerTrans/</InstallUrl>
+    <TargetCulture>zh-CHT</TargetCulture>
+    <ProductName>VerTrans</ProductName>
+    <PublisherName>KUPO</PublisherName>
+    <SuiteName>VerTrans</SuiteName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>46</ApplicationRevision>
+    <ApplicationVersion>2.0.3.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>http://abay1012.myweb.hinet.net/VerTrans/</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Nini, Version=1.1.0.0, Culture=neutral, PublicKeyToken=691faec150a7fa7b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\P4940Erric\Desktop\NINI\Bin\DotNet\2.0\Debug\Nini.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\P4940Erric\Desktop\1.2.3\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoxConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoxConfirm.Designer.cs">
+      <DependentUpon>BoxConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoxInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoxInput.Designer.cs">
+      <DependentUpon>BoxInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoxListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoxListBox.Designer.cs">
+      <DependentUpon>BoxListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoxMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoxMessage.Designer.cs">
+      <DependentUpon>BoxMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassEX.cs" />
+    <Compile Include="fc.cs" />
+    <Compile Include="FileCopyEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileCopyEx.Designer.cs">
+      <DependentUpon>FileCopyEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSelect.Designer.cs">
+      <DependentUpon>LoginSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MBox.Designer.cs">
+      <DependentUpon>MBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsnUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsnUserList.Designer.cs">
+      <DependentUpon>MsnUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUEX.Designer.cs">
+      <DependentUpon>MUEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option_POSDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Option_POSDL.Designer.cs">
+      <DependentUpon>Option_POSDL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BoxConfirm.resx">
+      <DependentUpon>BoxConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoxInput.resx">
+      <DependentUpon>BoxInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoxListBox.resx">
+      <DependentUpon>BoxListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoxMessage.resx">
+      <DependentUpon>BoxMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileCopyEx.resx">
+      <DependentUpon>FileCopyEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSelect.resx">
+      <DependentUpon>LoginSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MBox.resx">
+      <DependentUpon>MBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsnUserList.resx">
+      <DependentUpon>MsnUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUEX.resx">
+      <DependentUpon>MUEX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option_POSDL.resx">
+      <DependentUpon>Option_POSDL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProView.resx">
+      <DependentUpon>ProView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecVerControl.resx">
+      <DependentUpon>RecVerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecVer_Editor.resx">
+      <DependentUpon>RecVer_Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REditBefore.resx">
+      <DependentUpon>REditBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceEditor.resx">
+      <DependentUpon>ResourceEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TP05_LoadSetup.resx">
+      <DependentUpon>TP05_LoadSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERPVerSelect.resx">
+      <DependentUpon>ERPVerSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerNoControl.resx">
+      <DependentUpon>VerNoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="VerTrans_TemporaryKey.pfx" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProView.designer.cs">
+      <DependentUpon>ProView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecVerControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecVerControl.Designer.cs">
+      <DependentUpon>RecVerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecVer_Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecVer_Editor.Designer.cs">
+      <DependentUpon>RecVer_Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REditBefore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REditBefore.Designer.cs">
+      <DependentUpon>REditBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourceEditor.Designer.cs">
+      <DependentUpon>ResourceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RI.cs" />
+    <Compile Include="ERPVerSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERPVerSelect.Designer.cs">
+      <DependentUpon>ERPVerSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerNoControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerNoControl.Designer.cs">
+      <DependentUpon>VerNoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XXX2003.cs" />
+    <Compile Include="TP05_LoadSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TP05_LoadSetup.Designer.cs">
+      <DependentUpon>TP05_LoadSetup.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Letter-V.ico" />
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="ResourceDBDataSet.xsc">
+      <DependentUpon>ResourceDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResourceDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResourceDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResourceDBDataSet.xss">
+      <DependentUpon>ResourceDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\TextFile1.txt" />
+    <None Include="Resources\VerInfo.txt" />
+    <None Include="Resources\1351127915_button-cross_red_副本.png" />
+    <None Include="Resources\1351127998_accepted_48_副本.png" />
+    <None Include="Resources\1351127915_button-cross_red_副本1.png" />
+    <None Include="Resources\Folder Gear.png" />
+    <None Include="Resources\minus.ico" />
+    <None Include="Resources\add.ico" />
+    <None Include="Resources\minus_1.ico" />
+    <None Include="Resources\plus_1.ico" />
+    <None Include="Resources\400_F_40267889_tM4GFFqjItUMXFN8JMsSfZ1UPAR9q2ba.jpg" />
+    <None Include="Resources\return_1.ico" />
+    <None Include="Resources\return_11.ico" />
+    <None Include="Resources\L_1.ico" />
+    <None Include="Resources\L_11.ico" />
+    <None Include="Resources\L_12.ico" />
+    <None Include="Resources\edit_1.ico" />
+    <None Include="Resources\edit_11.ico" />
+    <None Include="Resources\minus_11.ico" />
+    <None Include="Resources\plus_11.ico" />
+    <None Include="Resources\add_2.ico" />
+    <None Include="Resources\images1.jpg" />
+    <None Include="Resources\82701.ico" />
+    <None Include="Resources\2221.ico" />
+    <None Include="Resources\Greencheckboxwithcheckmark.png" />
+    <None Include="Resources\Login-02 %281%29.png" />
+    <None Include="Resources\Login-02 %281%291.png" />
+    <None Include="Resources\YaHei.Consolas.1.12.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\tp06_LoadInfo.txt" />
+    <None Include="Resources\pkg.jpg" />
+    <None Include="Resources\pkg1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\51.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\10.ico" />
+    <None Include="Resources\11.ico" />
+    <None Include="Resources\101.ico" />
+    <None Include="Resources\111.ico" />
+    <None Include="Resources\12.ico" />
+    <None Include="Resources\13.ico" />
+    <None Include="Resources\14.ico" />
+    <None Include="Resources\15.ico" />
+    <None Include="Resources\16.ico" />
+    <None Include="Resources\img2.png" />
+    <None Include="Resources\img2 %281%29.png" />
+    <None Include="Resources\img2 %283%29.png" />
+    <None Include="Resources\img2 %282%29.png" />
+    <None Include="Resources\img2 %284%29.png" />
+    <None Include="Resources\9045267-icono-brillante-de-salida.jpg" />
+    <None Include="Resources\17.ico" />
+    <None Include="Resources\123.png" />
+    <None Include="Resources\VerNo.txt" />
+    <None Include="Resources\18.ico" />
+    <None Include="Resources\20.ico" />
+    <None Include="Resources\19.ico" />
+    <None Include="Resources\21.ico" />
+    <None Include="Resources\22.ico" />
+    <None Include="Resources\23.ico" />
+    <None Include="Resources\24.ico" />
+    <None Include="Resources\25.ico" />
+    <None Include="Resources\26.ico" />
+    <None Include="Resources\27.ico" />
+    <None Include="Resources\35.ico" />
+    <None Include="Resources\36.ico" />
+    <None Include="Resources\37.ico" />
+    <None Include="Resources\38.ico" />
+    <None Include="Resources\PGName.txt" />
+    <None Include="Resources\DSCPOSSETIP_INI.txt" />
+    <Content Include="V.ico" />
+    <Content Include="V1.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.Data.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Office.v12.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v12.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v12.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v12.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Xpo.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v12.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Letter-V.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="NPOI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="V.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="V1.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Icon\" />
+    <Folder Include="Resources\Pic\" />
+    <Folder Include="Resources\Text\" />
+    <Folder Include="Resources\ttf\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
